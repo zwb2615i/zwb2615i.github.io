@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>慧动机车部件-首页效果图</title>
+	<style>
+		html,body{
+    -ms-overflow-style: scrollbar;/*解决ie浏览器右侧滚动条遮挡内容问题*/
+    -webkit-overflow-scrolling: touch;/*解决iOS滚动条被卡住的问题*/
+    scroll-behavior: smooth;/*滚动到指定位置*/
+    margin:0 auto;
+}
+body{ font-family: "Poppins-Regular","Arial", "Helvetica","sans-serif"; background-color:#fff; overflow-x:hidden; color: #0f1821; box-sizing: border-box;}
+a{ color:#0f1821; text-decoration:none; outline: medium none;}
+a:link,a:visited{text-decoration: none;}
+a:hover{text-decoration:none;color:#0f1821;}
+img,li{ vertical-align:top; border:0px; list-style-type: none; box-sizing: border-box;}
+img{ max-width:100%;}
+.clear{clear: both;}
+.container{ margin: 0px auto; clear: both; padding: 0;  box-sizing: border-box;}
+*{margin:0px;padding:0px;}
+ul{ list-style-type:none;}
+b{ font-weight: normal; }
+ul,li,h5,dt,dd,img{margin:0px;padding:0px;}
+html,body,b,div,dl,dt,dd,ul,li,h1,h2,h3,h4,h5,h6,img,pre,form,p,input,td {margin:0px auto;padding:0; font-weight: normal; box-sizing: border-box;}
+body,td,th{ font-family: "Poppins-Regular","Arial", "Helvetica","sans-serif"; font-size:12px; box-sizing: border-box;}
+input,textarea{ font-family: "Poppins-Regular","Arial", "Helvetica","sans-serif"; border:0; outline:medium; box-sizing: border-box;}
+		.top{ overflow: hidden;position: relative;}
+		.top video{ position: absolute; left: 0; top: 0; right: 0; bottom: 0; z-index: -1; width: 100%; height: 100%; overflow: hidden; object-fit: fill;}
+	</style>
+	 <link href="swiper.min.css" rel="stylesheet" />
+	<script src="jquery.min.js"></script>
+	<script src="swiper.min.js"></script>
+</head>
+
+<body>
+	<!-- <div class="top"> -->
+		<!-- <video src="images/01视频背景.mp4" muted autoplay ></video> -->
+		<!-- <img src="images/首页_01.png" alt="" /> -->
+	<!-- </div> -->
+	<!-- <div class="div1">
+		<div class="swiper-container">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide">
+					<img src="images/首页_02.png" width="1920" height="" alt="" />
+				</div>
+				<div class="swiper-slide">
+					<img src="images/首页_02.png" width="1920" height="" alt="" />
+				</div>
+				<div class="swiper-slide">
+					<img src="images/首页_02.png" width="1920" height="" alt="" />
+				</div>
+				<div class="swiper-slide">
+					<img src="images/首页_02.png" width="1920" height="" alt="" />
+				</div>
+			</div>
+		</div>
+	</div> -->
+	<div class="div1">
+		<img src="images/首页_01.png" width="1920" height="" alt="" />
+	</div>
+	<div class="div1" style="background: url(images/111.png) no-repeat center center / cover; background-attachment: fixed;">
+		<img src="images/首页_02.png" width="1920" height="" alt="" />
+	</div>
+	<div class="div1">
+		<img src="images/首页_03.png" width="1920" height="" alt="" />
+	</div>
+	<script>
+		var swiper = new Swiper('.div1 .swiper-container', {
+			speed: 600,
+			autoplay: {
+				delay: 2000,
+				stopOnLastSlide: true,
+				disableOnInteraction: true,
+			},
+			loop: true,
+			pagination: {
+				el: '.div1 .swiper-pagination',
+				clickable: true,
+			},
+			navigation: {
+				nextEl: '.div1 .btn-next',
+				prevEl: '.div1 .btn-prev',
+			}
+		});
+	</script>
+</body>
+</html>
